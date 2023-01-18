@@ -1,0 +1,12 @@
+.env
+.env.test
+.DS_Store
+node_modules/*
+
+*.csv
+
+
+images/*
+
+node_modules/*
+dist/*

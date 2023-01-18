@@ -1,0 +1,18 @@
+version: "3.8"
+
+volumes:
+  db:
+
+services:
+  db:
+    image: "postgres:13.5-alpine3.15"
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata/boilerplate-db
+      - POSTGRES_DB=boilerplate-db
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - db:/var/lib/postgresql/data/pgdata/boilerplate-db
+    ports:
+      - "5001:5432"
+      - "5432:5432"
