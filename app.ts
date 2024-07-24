@@ -12,6 +12,8 @@ import ping from "./routes/ping";
 
 import dotenv from "dotenv";
 
+
+
 const buildApp = async (envFile: string): Promise<FastifyInstance> => {
   dotenv.config({
     path: `../${envFile}`,
